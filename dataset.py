@@ -55,8 +55,9 @@ class ImageFolderInstance(datasets.ImageFolder):
                 imgs = self.get_concat_v(imgs,tmp_img)
         '''     
 
-        tpath = path.split("train")
+        tpath = path.split("train/a310")
         tpath[0] += "masks"
+        tpath = "".join(tpath)
 
 #        tpath = "/".join(path.split("/")[:3]) + "/masks/" + name # + "-{}.jpg".format(num)
         target = self.loader(tpath)

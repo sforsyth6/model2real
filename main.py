@@ -20,7 +20,7 @@ from lib.utils import AverageMeter
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--data', metavar='DIR', default="/data/tempor",
+parser.add_argument('--data', metavar='DIR', default="/data/tempor/train/",
                     help='path to dataset')
 parser.add_argument('-j', '--workers', default=4, type=int, metavar='N',
                     help='number of data loading workers (default: 4)')
